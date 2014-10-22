@@ -1,0 +1,18 @@
+function LongestWord(sen) { 
+
+  var longest = 0;
+  var answer = "";
+  sen = sen.replace(/[^a-zA-Z0-9\s]/g, "");
+  sen = sen.split(" ");
+  
+  for (i=0;i<sen.length;i++) {
+    if (sen[i].length > longest) {
+    longest = sen[i].length;
+    answer = sen[i];
+    }
+    
+  }
+  
+  return answer; 
+         
+}
