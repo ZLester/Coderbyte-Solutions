@@ -1,0 +1,25 @@
+function SecondGreatLow(arr) { 
+
+  var answer1 = 0;
+  var answer2 = 0;
+  arr = arr.sort(function(a,b){return a-b});
+  arr = arr.filter(function(elem, pos, self) {return self.indexOf(elem) === pos;
+    });
+  
+  if (arr.length > 2) {
+    answer1 = arr[1];
+    answer2 = arr[arr.length-2];
+  }
+  else if (arr.length === 2) {
+    answer1 = arr[1];
+    answer2 = arr[0];
+  }
+  else {
+    answer1 = arr[0];
+    answer2 = arr[0];
+  }
+    
+  return answer1 + " " + answer2;  
+       
+}
+   
