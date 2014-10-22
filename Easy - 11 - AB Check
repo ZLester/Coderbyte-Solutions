@@ -1,0 +1,8 @@
+function ABCheck(str) { 
+
+  var testOne = /a...b/g;
+  var testTwo = /b...a/g;
+  
+  return testOne.test(str) || testTwo.test(str); 
+         
+}
