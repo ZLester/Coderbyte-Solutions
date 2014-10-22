@@ -1,0 +1,13 @@
+// Only works for numbers less than 2^9001
+
+function PowersofTwo(num) { 
+
+  for (i=0;i<9001;i++) {
+    if (num === Math.pow(2,i)) {
+    return true;
+    }
+  }
+  
+  return false; 
+         
+}
