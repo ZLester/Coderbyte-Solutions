@@ -1,0 +1,6 @@
+function ExOh(str) { 
+
+  return str.replace(/[^x]/g, "").length === str.replace(/[^o]/g, "").length;
+         
+}
+   
