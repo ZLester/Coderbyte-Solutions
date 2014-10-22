@@ -1,0 +1,32 @@
+function MeanMode(arr) { 
+
+  var map = {};
+  var sum = 0;
+  var mode = 0;
+  var greatestFreq = 0;
+
+  
+    for (i=0;i<arr.length;i++) {
+    if (map[arr[i]]){
+      map[arr[i]]++;
+        }
+    else {
+      map[arr[i]] = 1;
+    }
+    if (map[arr[i]]>greatestFreq) {
+    mode = arr[i];
+    greatestFreq = map[arr[i]];
+    }
+    }
+   
+  for (i=0;i<arr.length;i++) {
+  sum += arr[i];
+  }
+  var mean = sum/arr.length;
+  if (mean === mode) {
+  return 1;
+  }
+  else {
+  return 0;
+  }       
+}
