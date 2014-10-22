@@ -1,0 +1,8 @@
+function FirstFactorial(num) { 
+
+  for(i=num;i>1;i--) {
+    num *= i-1;
+      }
+  return num; 
+         
+}
