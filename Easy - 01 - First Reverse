@@ -37,7 +37,7 @@ function FirstReverse(str) {
   
   answer = "";
   
-  // Set up our for loop. Note that we start at the end of the string (str.length-1) and stop when we reach the start of the string (i>=0). 
+  // Next we set up a loop that will start at the end of the string and iterate backwards through it.
   // As we're moving backwards through the string, we use i-- to decrease i until it reaches 0.
   
   for (i=str.length-1;i>=0;i--) {
