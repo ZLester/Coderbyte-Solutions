@@ -6,9 +6,11 @@ function OffLineMinimum(strArr) {
   var lowest = 10;
   var lowestInd = 0;
   for (i=0;i<strArr.length;i++) {
+  
     if (numTest.test(strArr[i])) {
-      numArr.push(strArr[i]) 
+      numArr.push(strArr[i]); 
         }
+        
     else {
       for (j=0;j<numArr.length;j++) {
         if (numArr[j] < lowest) {
