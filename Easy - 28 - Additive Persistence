@@ -1,0 +1,27 @@
+function AdditivePersistence(num) { 
+
+  function splitArray(int) {
+  int = int.toString().split("");
+  var answer = [];  
+    for (i=0;i<int.length;i++) {
+    answer.push(parseInt(int[i]));
+    }
+  int = answer;
+    return int;
+  }
+  
+  function sum(array) {
+  var sum = 0;
+    for (i=0;i<array.length;i++) {
+    sum += array[i];
+    }
+    return sum;
+  }
+  var additivePer = 0;
+  while (num.toString().length != 1) {
+  num = splitArray(num);
+  num = sum(num);
+  additivePer++;
+  }
+  return additivePer;
+}
