@@ -18,7 +18,7 @@ function AdditivePersistence(num) {
     return sum;
   }
   var additivePer = 0;
-  while (num.toString().length != 1) {
+  while (num.toString().length > 1) {
   num = splitArray(num);
   num = sum(num);
   additivePer++;
