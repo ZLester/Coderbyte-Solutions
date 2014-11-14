@@ -1,0 +1,28 @@
+function TripleDouble(num1,num2) { 
+  
+  num1 = num1.toString();
+  num2 = num2.toString();
+  
+  var hasTriple = false;
+  var hasDouble = false;
+  var triples = [];
+  var doubles = [];
+  
+  for (i=0;i<num1.length;i++) {
+    if ((num1[i] == num1[i+1]) && (num1[i] == num1[i+2])) {
+      triples.push(num1[i]+num1[i+1]);
+    }
+  }
+  for (i=0;i<num2.length;i++) {
+    if (num2[i] == num2[i+1]) {
+      doubles.push(num2[i]+num2[i+1]);
+    }
+  }
+
+  for (i=0;i<triples.length;i++) {
+    if (triples.indexOf(doubles[i]) != -1) {
+    return 1;
+    }
+  }
+return 0;
+}
