@@ -16,20 +16,17 @@ function PrimeChecker(num) {
             startItem = num[i];
             num.splice(i, 1);
 
-            for (j = 0; j < innerLength; j++) {
+            for (j = 0; j < innerLength+1; j++) {
 
                 moveItem = num.shift();
                 num.splice(j, 0, moveItem);
-                answerArr.push(parseInt(startItem + num.join("")));
-
+            if (j<innerLength) {
+            answerArr.push(parseInt(startItem + num.join("")));
+        }
             }
-
-
-            num.splice(i - 1, 0, startItem);
-
+            num.splice(i, 0, startItem);
         }
         return answerArr;
-
     }
 
     function isPrime(num) {
