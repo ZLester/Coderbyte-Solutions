@@ -1,5 +1,5 @@
 function TimeConvert(num) { 
 
-    return ((num-(num%60))/60).toString() + ":" + (num%60).toString();
+    return Math.floor(num/60) + ":" + num%60 
    
 }
