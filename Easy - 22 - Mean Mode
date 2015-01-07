@@ -3,17 +3,14 @@
 function MeanMode(arr) { 
 
   var modeArr = [];
-  var mode = -1;
+  var mode = 0;
   var modeCount = 0;
   var sum = 0;
-
-  for (j=0;j<arr.length;j++) {
-  sum += arr[i];
-  }
-  
-  var mean = sum/arr.length;
   
   for (i=0;i<arr.length;i++) {
+  
+    sum += arr[i];
+    
     if (modeArr[arr[i]]) {
     modeArr[arr[i]]++;
     }
@@ -25,7 +22,9 @@ function MeanMode(arr) {
     modeCount = modeArr[arr[i]];
     }
   }
-
+  
+  var mean = sum/arr.length;
+  
   if (mean == mode) {
   return 1;
   } 
