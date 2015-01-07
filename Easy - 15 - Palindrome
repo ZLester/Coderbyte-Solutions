@@ -1,3 +1,5 @@
+// I put my string down flip it and reverse it
+
 function Palindrome(str) { 
 
   return str.replace(/\s/g, "") === str.replace(/\s/g, "").split("").reverse().join("");
