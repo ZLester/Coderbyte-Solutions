@@ -1,3 +1,42 @@
+// Using an array
+
+function MeanMode(arr) { 
+
+  var modeArr = [];
+  var mode = -1;
+  var modeCount = 0;
+  var sum = 0;
+
+  for (j=0;j<arr.length;j++) {
+  sum += arr[i];
+  }
+  
+  var mean = sum/arr.length;
+  
+  for (i=0;i<arr.length;i++) {
+    if (modeArr[arr[i]]) {
+    modeArr[arr[i]]++;
+    }
+    else {
+     modeArr[arr[i]] = 1;
+    }
+    if (modeArr[arr[i]] > modeCount) {
+    mode = arr[i];
+    modeCount = modeArr[arr[i]];
+    }
+  }
+
+  if (mean == mode) {
+  return 1;
+  } 
+  else {
+  return 0;
+  }
+         
+}
+
+// Using a map
+
 function MeanMode(arr) { 
 
   var map = {};
