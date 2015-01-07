@@ -4,7 +4,7 @@ function Palindrome(str) {
          
 }
 
-// While this problem doesn't use uppercasse letters, you can add in .toLowerCase() to account for that.
+// While this problem doesn't use any inputs with uppercase letters, you can add in .toLowerCase() to account for inputs that do.
 
 function Palindrome(str) { 
 
