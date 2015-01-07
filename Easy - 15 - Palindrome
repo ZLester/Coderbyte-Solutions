@@ -3,3 +3,11 @@ function Palindrome(str) {
   return str.replace(/\s/g, "") === str.replace(/\s/g, "").split("").reverse().join("");
          
 }
+
+// While this problem doesn't use uppercasse letters, you can add in .toLowerCase() to account for that.
+
+function Palindrome(str) { 
+
+    return str.replace(/[\s]/g,"").toLowerCase() == str.replace(/[\s]/g,"").toLowerCase().split("").reverse().join(""); 
+         
+}
