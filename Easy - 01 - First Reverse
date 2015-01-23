@@ -21,33 +21,10 @@ function FirstReverse(str) {
 
 }
 
-// A more elegant version of solution one
+// Tying all of the above together, we get:
 
 function FirstReverse(str) { 
   
   return str.split("").reverse().join("");
-
-}
-
-// A "methodless" solution using a for loop
-
-function FirstReverse(str) { 
-  
-  // Declare an empty string to hold the output of our for loop
-  
-  answer = "";
-  
-  // Next we set up a loop that will start at the end of the string and iterate backwards through it.
-  // As we're moving backwards through the string, we use i-- to decrease i until it reaches 0.
-  
-  for (i=str.length-1;i>=0;i--) {
-  
-  // Each pass will add the letter at position i to the empty string we declared earlier.
-  
-  answer += str[i];
-  
-  }
-  
-  return answer;
 
 }
