@@ -7,7 +7,7 @@ function FirstFactorial(num) {
       }
   
   // First we declare a for loop starting at the parameter number (var i = num)
-  // We decrease i by 1 each pass (i--) and stop when i reaches 3 (i > 2), with each pass will multiply the input number by i-1 (num *= i-1)
+  // We decrease i by 1 each pass (i--) and stop when i reaches 3 (i > 2), with each pass multiplying the input number by i-1 (num *= i-1)
   // This will have the effect of multiplying num by all whole integers between 2 and num-1 inclusive
   // For instance, if we pass the number 4 into our function, this loop will run twice, multiplying 4*3 (12) and then 12*2 (24) 
   // Note that we stop at i > 2 rather than i > 1 due to multiplying num by 1 being an unnecessary pass
