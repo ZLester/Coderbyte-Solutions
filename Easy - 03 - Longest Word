@@ -1,11 +1,14 @@
 function LongestWord(sen) { 
-
-  var longest = 0;
+  
+  // First we declare a variable to hold the longest string (var answer = "")
+  
   var answer = "";
+  var longest = 0;
+
   sen = sen.replace(/[^a-zA-Z0-9\s]/g, "");
   sen = sen.split(" ");
   
-  for (i=0;i<sen.length;i++) {
+  for (var i=0;i<sen.length;i++) {
     if (sen[i].length > longest) {
     longest = sen[i].length;
     answer = sen[i];
