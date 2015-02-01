@@ -19,7 +19,7 @@ function LongestWord(sen) {
   // Next, we use the split method to turn our input string into an array of its individual words
   // Note that we pass a single space into the method (" ") to split the string at each space
   
-  for (var i=0;i<sen.length;i++) {
+  for (var i=0,x=sen.length;i<x;i++) {
     if (sen[i].length > longestLength) {
       longestLength = sen[i].length;
       longestWord = sen[i];
@@ -30,10 +30,8 @@ function LongestWord(sen) {
   // Our if statement checks if the length of the current item is longer than our "longestLength" variable we declared earlier
   // and sets the longestWord variable to the actual word.
   // Note that since we initialized the longestLength variable to 0, the first word in our array will always become the longest word
-  // As per coderbyte's prompt, all ties go to the earliest occuring word, which is why we use greater than in our if statement and not greater than or equals to
+  // As per coderbyte's prompt, all ties go to the earliest occuring word, which is why we use > in our if statement and not >=
   
   return longestWord; 
-  
-  // Finally, we return our answer
          
   }
