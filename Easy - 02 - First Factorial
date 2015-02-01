@@ -4,6 +4,20 @@ function FirstFactorial(num) {
   
   for(var i=num;i>2;i--) {
   
+    num *= i-1;
+  
+      }
+ 
+ return num;
+
+}
+
+// Step by step
+
+function FirstFactorial(num) { 
+  
+  for(var i=num;i>2;i--) {
+  
   // First we declare a for loop starting at the parameter number (var i = num)
   // We decrease i by 1 each pass (i--) and stop when i reaches 3 (i > 2)
   
@@ -14,20 +28,10 @@ function FirstFactorial(num) {
       }
   
   // The above loop will have the effect of multiplying num by all whole integers between 2 and num-1 inclusive
-  // For instance, if we pass the number 4 into our function, this loop will run twice, multiplying 4*3 (12) and then 12*2 (24) 
+  // For instance, if we pass the number 4 into our function, the loop will run twice, multiplying 4*3 (12) and then 12*2 (24) 
   
  return num;
         
 }
 
-function FirstFactorial(num) { 
-  
-  for(var i=num;i>2;i--) {
-  
-    num *= i-1;
-  
-      }
- 
- return num;
 
-}
