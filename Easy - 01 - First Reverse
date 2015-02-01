@@ -23,7 +23,7 @@ function FirstReverse(str) {
 
 }
 
-// Chaining all of the above together, we get
+// Using best practices
 
 function FirstReverse(str) {
 
