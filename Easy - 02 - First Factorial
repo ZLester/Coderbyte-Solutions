@@ -1,4 +1,4 @@
-// Iterative solution
+// Iterative solution with each step explained
 
 function FirstFactorial(num) {
    
@@ -22,7 +22,7 @@ function FirstFactorial(num) {
 
 }
 
-// With no comments for clarity
+// Using best practices
 
 function FirstFactorial(num) {
     for (var i = num - 1; i > 1; i--) {
