@@ -1,4 +1,4 @@
-// Using methods with each step broken down
+// Each step explained
 
 function FirstReverse(str) {
 
