@@ -1,31 +1,18 @@
-function LetterChanges(str) { 
+function LetterChanges(str) {
 
-  var alphaLow = "abcdefghijklmnopqrstuvwxyz";
-  var alphaUpp = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  var vowelsLow = "aeiou";
-  var answer = "";
-  var answerCap = "";
-  
-  for (i=0;i<str.length;i++) {
-    if (alphaLow.indexOf(str[i]) != -1) {
-      answer += alphaLow[(alphaLow.indexOf(str[i])+1)%26];
+    var alpha = "abcdefghijklmnopqrstuvwxyz";
+    var newAlpha = "bcdEfghIjklmnOpqrstUvwxyzA";
+    var answer = "";
+    
+    for (i = 0; i < str.length; i++) {
+        if (/[a-zA-Z]/.test(str[i])) {
+            var index = alpha.indexOf(str[i]);
+            answer += newAlpha.charAt(index);
+        } else {
+            answer += str[i];
+        }
     }
-    else if (alphaUpp.indexOf(str[i]) != -1) {
-      answer += alphaUpp[(alphaUpp.indexOf(str[i])+1)%26];
-    }
-    else {
-      answer += str[i];
-    }
-  }
-  
-  for (i=0;i<answer.length;i++) {
-    if (vowelsLow.indexOf(answer[i]) != -1) {
-      answerCap += answer[i].toUpperCase();
-    }
-    else {
-      answerCap += answer[i];
-    }
-  }
-  
-  return answerCap;       
+    
+    return answer;
+
 }
