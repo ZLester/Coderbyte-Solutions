@@ -16,3 +16,20 @@ function LetterChanges(str) {
     return answer;
 
 }
+
+function LetterChanges(str) {
+
+    var alpha = "abcdefghijklmnopqrstuvwxyz";
+    var newAlpha = "bcdEfghIjklmnOpqrstUvwxyzA";
+    var answer = "";
+    for (i = 0, x = str.length; i < x; i++) {
+        if (/[a-z]/.test(str[i])) {
+            answer += newAlpha.charAt(alpha.indexOf(str[i]));
+        } else {
+            answer += str[i];
+        }
+    }
+    
+    return answer;
+    
+}
