@@ -5,7 +5,7 @@ function LetterChanges(str) {
     var answer = "";
     
     for (i = 0; i < str.length; i++) {
-        if (/[a-z]/.test(str[i])) {
+        if (alpha.indexOf(str[i]) !== -1) {
             var index = alpha.indexOf(str[i]);
             answer += newAlpha.charAt(index);
         } else {
@@ -24,7 +24,7 @@ function LetterChanges(str) {
     var answer = "";
     
     for (i = 0, x = str.length; i < x; i++) {
-        if (/[a-z]/.test(str[i])) {
+        if (alpha.indexOf(str[i]) !== -1) {
             answer += newAlpha.charAt(alpha.indexOf(str[i]));
         } else {
             answer += str[i];
