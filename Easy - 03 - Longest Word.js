@@ -1,3 +1,4 @@
+// Each step explained
 function LongestWord(sen) {
 
     // First, we declare a variable to hold the longest word (var longestWord = "") and initialize it with an empty string.
