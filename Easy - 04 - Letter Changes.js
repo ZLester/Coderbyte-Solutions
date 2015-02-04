@@ -1,4 +1,4 @@
-// With step by step instructions
+// Each step explained
 function LetterChanges(str) {
 
     // First we do a little meta-problem solving by setting up our alpha and newAlpha strings:
