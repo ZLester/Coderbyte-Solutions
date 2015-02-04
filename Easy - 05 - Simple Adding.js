@@ -1,5 +1,4 @@
 // Iterative solution
-
 function SimpleAdding(num) { 
 
   var sum = 0;
@@ -12,12 +11,11 @@ function SimpleAdding(num) {
 }
 
 // Recursive solution
-
 function SimpleAdding(num, curSum) {
   
   curSum = curSum | 0;
   
-  if (num == 0){
+  if (num === 0){
     return curSum;
   }
   
