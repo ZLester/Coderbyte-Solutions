@@ -10,7 +10,6 @@ function SimpleMode(arr) {
         } else {
             map[arr[i]] = 1;
         }
-
     }
     
     for (i = 0; i < arr.length; i++) {
