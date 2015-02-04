@@ -20,7 +20,7 @@ function SimpleSymbols(str) {
     return true;
 }
    
-// All together
+// With no comments for clarity
 function SimpleSymbols(str) {
     
     var alphaTest = /[a-zA-Z]/;
