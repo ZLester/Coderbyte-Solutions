@@ -10,7 +10,7 @@ function AlphabetSoup(str) {
   // and .join to turn it back into a string.
   str = str.join("");
   
-  // Then, return your answer.
+  // Finally, return your answer.
   return str;
 
 }
