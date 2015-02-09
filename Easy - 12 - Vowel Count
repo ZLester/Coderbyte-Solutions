@@ -1,5 +1,0 @@
-function VowelCount(str) { 
-
-  return str.replace(/[^aeiou]/g, "").length; 
-         
-}
