@@ -2,7 +2,7 @@ function ArithGeo(arr) {
 
     var arrDif = [];
     var arrQuo = [];
-    var arrFlag = true;
+    var ariFlag = true;
     var geoFlag = true;
 
     for (i = 0; i < arr.length - 1; i++) {
@@ -12,14 +12,14 @@ function ArithGeo(arr) {
 
     for (i = 0; i < arrDif.length - 1; i++) {
         if (arrDif[i] != arrDif[i + 1]) {
-            arrFlag = false;
+            ariFlag = false;
         }
         if (arrQuo[i] != arrQuo[i + 1]) {
             geoFlag = false;
         }
     }
 
-    if (arrFlag) {
+    if (ariFlag) {
         return "Arithmetic";
     } else if (geoFlag) {
         return "Geometric";
