@@ -9,11 +9,11 @@ function FirstReverse(str) {
     // Note that .reverse only works on arrays (which is why we had to use .split).
     str = str.reverse();
 
-    // Finally, we use the .join method to patch our array back together and return a string. 
+    // After that, we use the .join method to patch our array back together into a string. 
     // Passing an empty string here means that nothing gets inserted between each array element.
     str = str.join("");
 
-    // Make sure to return the string
+    // Finally, we return the modified string
     return str;
 
 }
