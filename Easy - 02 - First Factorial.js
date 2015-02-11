@@ -1,4 +1,4 @@
-// Iterative solution with each step explained
+// Step By Step
 function FirstFactorial(num) {
    
     // First we declare a for loop starting at the parameter number - 1 (var i = num - 1)
@@ -17,7 +17,7 @@ function FirstFactorial(num) {
 
 }
 
-// Using best practices
+// Best Practices
 function FirstFactorial(num) {
     for (var i = num - 1; i > 1; i--) {
         num *= i;
