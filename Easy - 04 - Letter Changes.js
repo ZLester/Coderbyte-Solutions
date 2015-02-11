@@ -1,4 +1,4 @@
-// Each step explained
+// Step By Step
 function LetterChanges(str) {
 
     // First we do a little meta-problem solving by setting up our alpha and newAlpha strings:
@@ -39,7 +39,7 @@ function LetterChanges(str) {
 
 }
 
-// With best practices
+// Best Practices
 function LetterChanges(str) {
 
     var alpha = "abcdefghijklmnopqrstuvwxyz";
