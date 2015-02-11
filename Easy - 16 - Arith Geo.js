@@ -12,7 +12,7 @@ function ArithGeo(arr) {
 
     // Next, we loop through each item in our input array and use the .push method to send...
     for (var i = 0; i < arr.length - 1; i++) {
-        // ...the difference of the item to our arrDif array.
+        // ...the difference of each item to our arrDif array.
         arrDif.push(arr[i + 1] - arr[i]);
         // ...the  quotient of each item to our arrQuo array. 
         arrQuo.push(arr[i + 1] / arr[i]);
