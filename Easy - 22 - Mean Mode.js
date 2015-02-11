@@ -13,6 +13,7 @@ function MeanMode(arr) {
     
     // Next, we loop through each item in the array and... 
     for (var i = 0; i < arr.length; i++) {
+        
         // ...add each value to our sum variable
         sum += arr[i];
         
