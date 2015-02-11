@@ -1,4 +1,4 @@
-// Each step explained
+// Step By Step
 function FirstReverse(str) {
 
     // First, we need to use .split to change the string into an array so it can be further manipulated.
@@ -18,7 +18,7 @@ function FirstReverse(str) {
 
 }
 
-// Using best practices
+// Best Practices
 function FirstReverse(str) {
 
     return str.split("").reverse().join("");
