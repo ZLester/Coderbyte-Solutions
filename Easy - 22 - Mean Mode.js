@@ -1,5 +1,6 @@
 // Step By Step
 function MeanMode(arr) {
+    
     // First we declare a few variables:
     // An empty array to hold our mode counts.
     var modeArr = [];
@@ -9,6 +10,7 @@ function MeanMode(arr) {
     var modeCount = 0;
     // A variable to hold the sum of the items in the array (to calculate the mean).
     var sum = 0;
+    
     // Next, we loop through each item in the array and... 
     for (var i = 0; i < arr.length; i++) {
         // ...add each value to our sum variable
@@ -32,10 +34,10 @@ function MeanMode(arr) {
         }
     }
     
-    // We calculate the mean by dividing the sum by the total number of items in the array
+    // Next, calculate the mean by dividing the sum by the total number of items in the array
     var mean = sum / arr.length;
     
-    // If the mean and the mode are the same, we return 1, otherwise we return 0.
+    // Finally, if the mean and the mode are the same, we return 1, otherwise we return 0.
     if (mean == mode) {
         return 1;
     } else {
