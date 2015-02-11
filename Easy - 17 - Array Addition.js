@@ -1,6 +1,5 @@
 // Not my original solution, as this was one of the only Easy problems that exceeded my knowledge of JS at the time I first attempted it
 // All credit to Lindsey Smith at Leaena.com
-
 function ArrayAdditionI(arr) {
 
     arr.sort(function (a, b) {return a - b;});
