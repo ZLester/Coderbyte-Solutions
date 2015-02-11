@@ -2,6 +2,7 @@
 // ♫ I put my string down flip it and reverse it ♫
 
 function Palindrome(str) {
+  
   // First, we prep the string by using the .replace method to take out all spaces.
   // Note that [\s] will match all whitespace in the string.
   str = str.replace(/[\s]/g, "");
@@ -17,7 +18,6 @@ function Palindrome(str) {
 
 // Best Practices
 // Note that while this problem doesn't use any inputs with uppercase letters, you can add in .toLowerCase() to account for inputs that do.
-
 function Palindrome(str) { 
 
     return str.replace(/[\s]/g,"").toLowerCase() == str.replace(/[\s]/g,"").toLowerCase().split("").reverse().join(""); 
