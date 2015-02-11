@@ -9,10 +9,10 @@ function FirstFactorial(num) {
         num *= i;
         
     }
-    // The above loop will have the effect of multiplying num by all whole integers between 2 and num-1 inclusive
-    // For instance, if we pass 4 into our function, the loop will run twice, multiplying 4*3 (12) and then 12*2 (24) 
+    // The above loop will have the effect of multiplying num by all whole integers between 2 and num-1 inclusive.
+    // For instance, if we pass 4 into our function, the loop will run twice, multiplying 4*3 (12) and then 12*2 (24). 
     
-    // Make sure to return the number
+    // Finally, we return our answer.
     return num;
 
 }
