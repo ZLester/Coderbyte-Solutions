@@ -8,7 +8,7 @@ function Palindrome(str) {
   str = str.replace(/[\s]/g, "");
   
   // Next, we declare a new variable to hold the reversed string and use the .split, .reverse, and .join methods to modify it.
-  // You should remember this section from the very first problem (check my solution in this repository if you need a refresher).
+  // You should remember this section from the very first problem (check out my solution in this repository if you need a refresher).
   strRev = str.split("").reverse().join("");
   
   // Finally, we return the truth value of comparing the two strings.
