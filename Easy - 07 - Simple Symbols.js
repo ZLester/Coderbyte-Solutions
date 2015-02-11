@@ -1,4 +1,4 @@
-// Each step explained
+// Step By Step
 function SimpleSymbols(str) {
     
     // First, we declare a variable to hold a regex expression to match all upper and lowercase letters
@@ -20,7 +20,7 @@ function SimpleSymbols(str) {
     return true;
 }
    
-// With no comments for clarity
+// Best Practices
 function SimpleSymbols(str) {
     
     var alphaTest = /[a-zA-Z]/;
