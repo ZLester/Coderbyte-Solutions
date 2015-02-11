@@ -3,14 +3,16 @@
 
 function ArrayAdditionI(arr) {
 
-    arr.sort(function (a, b) {return a - b});
+    arr.sort(function (a, b) {return a - b;});
     var largest = arr.pop();
     var sum = 0;
+    
     for (i = 0; i < arr.length; i++) {
         sum += arr[i];
-         if (sum === largest) {
-                    return true;
-                }
+        if (sum === largest) {
+            return true;
+        }
+        
         for (j = 0; j < arr.length; j++) {
             if (i !== j) {
                 sum += arr[j];
@@ -27,8 +29,8 @@ function ArrayAdditionI(arr) {
                 }
             }
         }
-     sum = 0;
+        sum = 0;
     }
-return false;
-  
+    
+    return false;
 }
