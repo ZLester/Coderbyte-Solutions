@@ -1,10 +1,13 @@
 // Step By Step
 function VowelCount(str) {
-    
+
     // Remove all characters in the string that aren't vowels with the .replace method...
+    // Note that ^ in Regex means "all characters not in the set", so placing it in front of aeiou means "Match everything that isn't a vowel"
+    // Enclosing a set in [] means that our string matches any individual character in that set
+    // Ending with our /g tag signifies that we want to do a global search and lets our engine know to going through the entire string.
     str = str.replace(/[^aeiuo]/g, "");
     
-    // ...and return the strings length
+    // ...and return the string's length
     return str.length;
     
 }
