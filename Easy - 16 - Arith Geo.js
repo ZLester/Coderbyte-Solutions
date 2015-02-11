@@ -22,13 +22,13 @@ function ArithGeo(arr) {
     // After that, we use a single loop to check if each item in our newly populated arrDif and arrQuo arrays are equal to each other.
     // Note that we can set the loop length using the length of arrDif because we know both arrDif and arrQuo are the same length.
     for (i = 0; i < arrDif.length - 1; i++) {
+        // This if statement checks to see if each item in our array of differences is equal to the next item in the array, and if not, sets our ariFlag to false.
         if (arrDif[i] != arrDif[i + 1]) {
             ariFlag = false;
-            // This if statement checks to see if each item in our array of differences is equal to the next item in the array, and if not, sets our ariFlag to false.
         }
+        // We do the same thing for our array of quotients.
         if (arrQuo[i] != arrQuo[i + 1]) {
             geoFlag = false;
-            // We do the same thing for our array of quotients.
         }
     }
 
