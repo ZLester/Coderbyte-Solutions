@@ -1,6 +1,6 @@
 function ThirdGreatest(strArr) { 
 
-  var strArr = strArr.sort(function (a, b) {return b.length - a.length});
+  strArr = strArr.sort(function (a, b) {return b.length - a.length});
   
   return strArr[2]; 
          
