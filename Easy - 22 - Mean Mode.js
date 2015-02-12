@@ -1,14 +1,14 @@
 // Step By Step
 function MeanMode(arr) {
     
-    // First we declare a few variables:
-    // An empty array to hold the number of times each item in the input array occurs.
+    // First, we declare:
+    // an empty array to hold the number of times each item in the input array occurs,
     var modeArr = [];
-    // A variable to hold the actual mode.
+    // a variable to hold the actual mode,
     var mode = 0;
-    // A variable to hold the number of times the mode occurs.
+    // a variable to hold the number of times the mode occurs,
     var modeCount = 0;
-    // A variable to hold the sum of the items in the array (to calculate the mean).
+    // and a variable to hold the sum of the items in the array (to calculate the mean),
     var sum = 0;
     
     // Next, we loop through each item in the input array and... 
@@ -26,11 +26,11 @@ function MeanMode(arr) {
             modeArr[arr[i]] = 1;
         }
         
-        // ...and finally, check if the count for the item's position in our mode array is greater than our current mode's count.
+        // ...and check if the count for the item's position in our mode array is greater than our current mode's count.
         if (modeArr[arr[i]] > modeCount) {
-            // If it is, we set the mode to the current item in our input array
+            // If it is, we set the mode to the current item in our input array...
             mode = arr[i];
-            // And set the number of times the mode has occured to the current item's value in our mode array.
+            // ...and set the number of times the mode has occured to the current item's value in our mode array.
             modeCount = modeArr[arr[i]];
         }
     }
@@ -38,7 +38,7 @@ function MeanMode(arr) {
     // Next, we calculate the mean by dividing the sum by the total number of items in the array.
     var mean = sum / arr.length;
     
-    // Finally, if the mean and the mode are the same, we return 1, otherwise we return 0.
+    // If the mean and the mode are the same, we return 1, otherwise we return 0.
     if (mean == mode) {
         return 1;
     } else {
