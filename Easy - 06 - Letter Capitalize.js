@@ -8,7 +8,7 @@ function LetterCapitalize(str) {
     // Next, we loop through each item in our new array...
     for (i = 0; i < str.length; i++) {
         // ...and set each word in the array to be equal to the first letter of the word (str[i][0]) capitalized using the toUpperCase method.
-        // along with a substring of the remainder of the word (passing only 1 arguement into the substr method means that you start at that index and go until the end of the string)
+        // along with a substring of the remainder of the word (passing only 1 arg into the substr method means that you start at that index and go until the end of the string)
         str[i] = str[i][0].toUpperCase() + str[i].substr(1);
     }
     // Finally, we join our array back together...
