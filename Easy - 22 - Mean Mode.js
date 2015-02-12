@@ -2,7 +2,7 @@
 function MeanMode(arr) {
     
     // First we declare a few variables:
-    // An empty array to hold our mode counts.
+    // An empty array to hold the number of times each item in the input array occurs.
     var modeArr = [];
     // A variable to hold the actual mode.
     var mode = 0;
