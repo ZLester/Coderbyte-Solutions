@@ -26,7 +26,7 @@ function MeanMode(arr) {
             modeArr[arr[i]] = 1;
         }
         
-        // ...and finally, we check if the count for the item's position in our mode array is greater than our current mode's count.
+        // ...and finally, check if the count for the item's position in our mode array is greater than our current mode's count.
         if (modeArr[arr[i]] > modeCount) {
             // If it is, we set the mode to the current item in our input array
             mode = arr[i];
@@ -35,7 +35,7 @@ function MeanMode(arr) {
         }
     }
     
-    // Next, calculate the mean by dividing the sum by the total number of items in the array
+    // Next, we calculate the mean by dividing the sum by the total number of items in the array.
     var mean = sum / arr.length;
     
     // Finally, if the mean and the mode are the same, we return 1, otherwise we return 0.
@@ -55,7 +55,7 @@ function MeanMode(arr) {
     var modeCount = 0;
     var sum = 0;
 
-    for (var i = 0; i < arr.length; i++) {
+    for (var i = 0, x = arr.length; i < x; i++) {
 
         sum += arr[i];
 
