@@ -11,13 +11,13 @@ function MeanMode(arr) {
     // A variable to hold the sum of the items in the array (to calculate the mean).
     var sum = 0;
     
-    // Next, we loop through each item in the array and... 
+    // Next, we loop through each item in the input array and... 
     for (var i = 0; i < arr.length; i++) {
         
         // ...add each value to our sum variable
         sum += arr[i];
         
-        // ...check if each value is present in our mode array
+        // ...check if each value is present in our frequency count array
         if (modeArr[arr[i]]) {
             // If it is, we increase its value by 1.
             modeArr[arr[i]]++;
