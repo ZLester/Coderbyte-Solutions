@@ -5,7 +5,7 @@ function SimpleSymbols(str) {
     var alphaTest = /[a-zA-Z]/;
     
     // Next, we loop through each character in the string...
-    for (i = 0; i < str.length; i++) {
+    for (var i = 0; i < str.length; i++) {
         // ... and use the our previously declared regex expression and the .test method to see if the character is a letter
         if (alphaTest.test(str[i])) {
             // If our test returns true, we check if either of the adjacent characters are not +'s
@@ -25,7 +25,7 @@ function SimpleSymbols(str) {
     
     var alphaTest = /[a-zA-Z]/;
     
-    for (i = 0; i < str.length; i++) {
+    for (var i = 0, x = str.length; i < x; i++) {
         if (alphaTest.test(str[i])) {
             if ((str[i + 1] != "+") || (str[i - 1] != "+")) {
                 return false;
