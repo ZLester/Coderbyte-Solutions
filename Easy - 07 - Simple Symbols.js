@@ -22,9 +22,7 @@ function SimpleSymbols(str) {
    
 // Best Practices
 function SimpleSymbols(str) {
-
-
-
+    
     for (var i = 0, x = str.length; i < x; i++) {
         if (/[a-zA-Z]/.test(str[i])) {
             if ((str[i + 1] != "+") || (str[i - 1] != "+")) {
