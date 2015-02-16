@@ -22,16 +22,16 @@ function SimpleSymbols(str) {
    
 // Best Practices
 function SimpleSymbols(str) {
-    
-    var alphaTest = /[a-zA-Z]/;
-    
+
+
+
     for (var i = 0, x = str.length; i < x; i++) {
-        if (alphaTest.test(str[i])) {
+        if (/[a-zA-Z]/.test(str[i])) {
             if ((str[i + 1] != "+") || (str[i - 1] != "+")) {
                 return false;
             }
         }
     }
-    
+
     return true;
 }
