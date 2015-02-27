@@ -1,4 +1,4 @@
-// Each step explained
+// Step By Step
 function CheckNums(num1, num2) {
     
     // We check if the first number is less than the second...
@@ -17,7 +17,7 @@ function CheckNums(num1, num2) {
 
 }
 
-// With no comments for clarity
+//  Best Practices
 function CheckNums(num1, num2) {
 
     if (num1 < num2) {
