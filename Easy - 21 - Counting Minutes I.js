@@ -32,14 +32,3 @@ function CountingMinutesI(str) {
     }
 }
 }
-  if ((endTimeHour === 12) && (endTimeAMPM === "am")) {
-  endTimeHour -= 12;
-  }
-  
-  if ((startTimeHour > endTimeHour) || ((startTimeHour === endTimeHour) && (startTimeMinute > endTimeMinute))){
-    return (1440 + ((endTimeHour - startTimeHour) * 60) + (endTimeMinute - startTimeMinute));
-  }
-  else {
-  return ((endTimeHour - startTimeHour) * 60) + (endTimeMinute - startTimeMinute);
-  }
-  }
