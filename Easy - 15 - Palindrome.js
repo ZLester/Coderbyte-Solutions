@@ -13,7 +13,6 @@ function Palindrome(str) {
 
     // Finally, we return the truth value of comparing the two strings.
     return str == strRev;
-
 }
 
 // Best Practices
@@ -21,5 +20,4 @@ function Palindrome(str) {
 function Palindrome(str) {
 
     return str.replace(/[\s]/g, "").toLowerCase() == str.replace(/[\s]/g, "").toLowerCase().split("").reverse().join("");
-
 }
