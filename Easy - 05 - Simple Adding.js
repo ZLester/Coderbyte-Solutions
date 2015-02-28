@@ -1,4 +1,4 @@
-// Iterative solution
+// Step By Step Iterative Solution
 function SimpleAdding(num) {
     // Declare a variable to hold our answer
     var sum = 0;
@@ -13,12 +13,13 @@ function SimpleAdding(num) {
     return sum;
 }
 
-// Recursive solution
+// Step By Step Recursive Solution 
+// By Eric Ehli, https://github.com/eihli
 function SimpleAdding(num, sum) {
     // If no argument is passed for sum (Coderbyte will always only pass 1 argument into our function), we set it to 0
     sum = sum | 0;
     
-    // We set our base case to stop the function from recursing when our input number equals 0...
+    // Next, we set our base case to stop the function from recursing when our input number equals 0...
     if (num === 0) {
         // ...and return our answer
         return sum;
