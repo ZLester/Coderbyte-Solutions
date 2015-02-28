@@ -1,5 +1,4 @@
-// With step-by-step instructions
-
+// Step By Step
 function LetterCapitalize(str) {
     // First, we use the split method to divide the input string into an array of individual words
     // Note that we pass a string consisting of a single space into the method to "split" the string at each space
@@ -18,12 +17,12 @@ function LetterCapitalize(str) {
     return str;
 }
 
-// With best practices
+// Best Practices
 function LetterCapitalize(str) {
 
     str = str.split(" ");
 
-    for (i = 0, x = str.length; i < x; i++) {
+    for (var i = 0, x = str.length; i < x; i++) {
         str[i] = str[i][0].toUpperCase() + str[i].substr(1);
     }
 
