@@ -31,6 +31,5 @@ function SimpleAdding(num, sum) {
     num--;
     
     // We return the function again and continue to add num to curSum and decrement num by 1 until num reaches 0.
-    // Notice how much this function "feels" like the iterative solution above 
     return SimpleAdding(num, sum);
 }
