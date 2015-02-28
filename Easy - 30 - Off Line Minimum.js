@@ -23,5 +23,4 @@ function OffLineMinimum(strArr) {
     }
 
     return answerArr.join(",");
-
 }
