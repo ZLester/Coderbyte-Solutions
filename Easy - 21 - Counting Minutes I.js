@@ -31,4 +31,3 @@ function CountingMinutesI(str) {
         return ((endTimeHour - startTimeHour) * 60) + (endTimeMinute - startTimeMinute);
     }
 }
-}
