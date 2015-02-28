@@ -1,6 +1,5 @@
 // Step By Step
 // ♫ I put my string down flip it and reverse it ♫
-
 function Palindrome(str) {
 
     // First, we prep the string by using the .replace method to take out all spaces.
