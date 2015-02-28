@@ -1,7 +1,7 @@
 // Step By Step
 function AlphabetSoup(str) { 
   
-  // Use .split to turn the string into an array 
+  // Use .split to turn the string into an array... 
   str = str.split("");
   
   // .sort to alphabatize the new array...
@@ -10,14 +10,12 @@ function AlphabetSoup(str) {
   // and .join to turn it back into a string.
   str = str.join("");
   
-  // Finally, return your answer.
+  // Finally, we return our answer.
   return str;
-
 }
 
 // Best Practices
 function AlphabetSoup(str) { 
   
   return str.split("").sort().join("");
-
 }
