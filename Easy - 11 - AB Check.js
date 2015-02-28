@@ -12,12 +12,10 @@ function ABCheck(str) {
 
     // Finally, we return our answer
     return aThenB || bThenA;
-
 }
 
 // Best Practices
 function ABCheck(str) {
 
     return (/a...b/).test(str) || (/b...a/).test(str);
-
 }
