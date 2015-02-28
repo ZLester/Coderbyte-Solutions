@@ -19,6 +19,5 @@ function FirstReverse(str) {
 
 // Best Practices
 function FirstReverse(str) {
-    
     return str.split("").reverse().join("");
 }
