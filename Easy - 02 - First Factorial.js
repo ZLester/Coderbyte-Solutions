@@ -14,14 +14,15 @@ function FirstFactorial(num) {
     
     // Finally, we return our answer.
     return num;
-
 }
 
 // Best Practices
 function FirstFactorial(num) {
+    
     for (var i = num - 1; i > 1; i--) {
         num *= i;
     }
+    
     return num;
 }
 
