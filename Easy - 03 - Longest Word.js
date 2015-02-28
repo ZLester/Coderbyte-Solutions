@@ -31,7 +31,6 @@ function LongestWord(sen) {
     
     // Finally, we return the variable where we stored the answer
     return longestWord;
-
 }
 
 // Best Practices
