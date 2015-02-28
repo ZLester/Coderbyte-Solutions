@@ -9,12 +9,10 @@ function VowelCount(str) {
     
     // Finally, we return the length of the string to "count" how many vowels are left.
     return str.length;
-    
 }
 
 // Best Practices
 function VowelCount(str) { 
 
   return str.replace(/[^aeiou]/g, "").length; 
-
 }
