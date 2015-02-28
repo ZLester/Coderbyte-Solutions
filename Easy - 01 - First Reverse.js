@@ -1,6 +1,6 @@
 // Step By Step
 function FirstReverse(str) {
-
+    
     // First, we need to use .split to change the string into an array so it can be further manipulated.
     // Passing "" (an empty string) into the method splits the string at every character.
     str = str.split("");
@@ -15,12 +15,10 @@ function FirstReverse(str) {
 
     // Finally, we return the modified string
     return str;
-
 }
 
 // Best Practices
 function FirstReverse(str) {
-
+    
     return str.split("").reverse().join("");
-
 }
