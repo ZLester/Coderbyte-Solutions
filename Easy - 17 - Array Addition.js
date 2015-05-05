@@ -6,13 +6,13 @@ function ArrayAdditionI(arr) {
     var largest = arr.pop();
     var sum = 0;
     
-    for (i = 0; i < arr.length; i++) {
+    for (var i = 0; i < arr.length; i++) {
         sum += arr[i];
         if (sum === largest) {
             return true;
         }
         
-        for (j = 0; j < arr.length; j++) {
+        for (var j = 0; j < arr.length; j++) {
             if (i !== j) {
                 sum += arr[j];
                 if (sum === largest) {
@@ -20,7 +20,7 @@ function ArrayAdditionI(arr) {
                 }
             }
         }
-        for (k = 0; k < arr.length; k++) {
+        for (var k = 0; k < arr.length; k++) {
             if (i !== k) {
                 sum -= arr[k];
                 if (sum === largest) {

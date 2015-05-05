@@ -5,7 +5,7 @@ function AdditivePersistence(num) {
     function splitArray(intN) {
         intN = intN.toString().split("");
         var answerArr = [];
-        for (i = 0; i < intN.length; i++) {
+        for (var i = 0; i < intN.length; i++) {
             answerArr.push(parseInt(intN[i]));
         }
         return answerArr;
@@ -13,7 +13,7 @@ function AdditivePersistence(num) {
 
     function add(array) {
         var sum = 0;
-        for (i = 0; i < array.length; i++) {
+        for (var i = 0; i < array.length; i++) {
             sum += array[i];
         }
         return sum;

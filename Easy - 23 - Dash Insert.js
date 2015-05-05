@@ -4,7 +4,7 @@ function DashInsert(num) {
     // First, we convert the input number into a string 
     // This allows us to add the character to our answer rather than summing the two. 
     num = num.toString();
-    // Next, we declare and initialize a variable to hold our answer.
+    // Next, we declare and initialize a variable to hold our answer string.
     var answer = "";
 
     // After that, we loop through each character in our input number...

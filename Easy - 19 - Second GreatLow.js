@@ -1,18 +1,18 @@
 // Step By Step
 function SecondGreatLow(arr) {
-    
+
     // Use the sort function and pass in a callback to sort from smallest to largest
     // If you haven't encountered function expressions/callbacks before, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort gives a good explanation of how this method works.
-    arr = arr.sort(function (a, b) {return a - b;});
-    
+    arr = arr.sort(function(a, b) {return a - b;});
+
     // Loop through each item in the array and check if the adjacent array item is the same.
-    for (i = arr.length - 1; i > 0; i--) {
+    for (var i = arr.length - 1; i > 0; i--) {
         if (arr[i] == arr[i - 1]) {
             // If it is, we use the .splice method to remove it.
             arr.splice(i, 1);
         }
     }
-    
+
     if (arr.length > 2) {
         // If our array is longer than two items, we return the 2nd and 2nd to last item in the array.
         return arr[1] + " " + arr[arr.length - 2];
