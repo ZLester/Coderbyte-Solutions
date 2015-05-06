@@ -1,3 +1,4 @@
+
 function PrimeMover(mynum) {
 
     function test(num) {
@@ -10,14 +11,16 @@ function PrimeMover(mynum) {
         return isPrime;
     }
 
-var primeArr = [2];
-
-for (var k = 2; k < 10000; k++) {
-    if (test(k)) {
-        primeArr.push(k);
+    var primeArr = [2];
+    var cur = 3;
+    
+    while (primeArr.length < mynum) {
+        if (test(cur)) {
+            primeArr.push(cur);
+        }
+        cur++;
     }
-}
 
-return primeArr[mynum];
+    return primeArr.pop();
 
 }
