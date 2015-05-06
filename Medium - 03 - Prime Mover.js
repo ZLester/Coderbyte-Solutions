@@ -9,7 +9,6 @@ function PrimeMover(mynum) {
         }
         return isPrime;
     }
-}
 
 var primeArr = [2];
 
