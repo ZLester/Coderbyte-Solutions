@@ -1,11 +1,9 @@
-// Won't work for numbers greater than what the scouter says about his power level.
-function PowersofTwo(num) {
-
-    for (var i = 0; i < 9000; i++) {
-        if (num === Math.pow(2, i)) {
-            return true;
-        }
-    }
-
-    return false;
+function PowersofTwo(num) { 
+  
+while (num > 1)  {
+  if (num%2 !== 0) {
+    return false;}
+num = Math.floor(num/2);
+}
+return true;
 }
