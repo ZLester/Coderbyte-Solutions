@@ -6,7 +6,7 @@ function DistinctList(arr) {
       if (arr[i] === arr[i-1]) {
       arr.splice(i,1);
       }
-      }
+    }
   var endLength = arr.length;
   
   return startLength - endLength; 
