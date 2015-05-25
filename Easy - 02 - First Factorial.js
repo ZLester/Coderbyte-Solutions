@@ -2,10 +2,10 @@
 function FirstFactorial(num) {
    
     // First we declare a for loop starting at the parameter number - 1 (var i = num - 1)
-    // We decrease i by 1 each pass (i--) and stop when i reaches 2 (i > 1) 
+    // We decrease i by 1 each iteration (i--) and stop when i reaches 2 (i > 1) 
     for (var i = num - 1; i > 1; i--) {
        
-        // On each pass we multiply the num by i
+        // On each pass, we multiply the num by i
         num *= i;
         
     }
