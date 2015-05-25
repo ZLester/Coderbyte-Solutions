@@ -17,7 +17,7 @@ function FirstReverse(str) {
     return str;
 }
 
-// Best Practices
+// Using chaining
 function FirstReverse(str) {
     return str.split("").reverse().join("");
 }
