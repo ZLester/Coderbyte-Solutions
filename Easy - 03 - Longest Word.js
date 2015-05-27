@@ -2,8 +2,8 @@
 function LongestWord(sen) {
 
     // First, we declare a variable to hold the longest word (var longestWord = "") and initialize it with an empty string...
-    // ...and another variable to hold the length of the longest word (var longestLength = 0) and initialize it to 0.
     var longestWord = "";
+    // ...and another variable to hold the length of the longest word, initializing it to 0.
     var longestLength = 0;
 
     // Next, we "prep" the input sentence by removing all non-alphanumeric characters
@@ -46,6 +46,5 @@ function LongestWord(sen) {
             longestWord = sen[i];
         }
     }
-    
     return longestWord;
 }
