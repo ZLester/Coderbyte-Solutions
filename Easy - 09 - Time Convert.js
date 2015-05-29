@@ -6,6 +6,7 @@ function TimeConvert(num) {
     var hours = Math.floor(num / 60);
     
     // Next, we use the modulus operator to figure out the number of minutes (the remainder of num/60). 
+    // For instance, 125 % 60 would return 5.
     var minutes = num % 60;
     
     // Finally, we return our answer as a string with ":" inserted between the hours and minutes.
