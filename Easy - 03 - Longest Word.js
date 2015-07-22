@@ -35,7 +35,6 @@ function LongestWord(sen) {
 
 // Best Practices
 function LongestWord(sen) {
-   
     var longestWord = "";
     var longestLength = 0;
     sen = sen.replace(/[^a-zA-Z0-9\s]/g, "").split(" ");
