@@ -2,7 +2,7 @@
 function ABCheck(str) {
 
     // First, we declare two regex expressions to match if a and b ever occur three characters apart.
-    // Note that . is a "wildcard" metacharacterin regex that matches almost any character.
+    // Note that . is a "wildcard" metacharacter in regex that matches almost any character.
     var testOne = /a...b/;
     var testTwo = /b...a/;
 
