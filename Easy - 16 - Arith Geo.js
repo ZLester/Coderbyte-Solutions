@@ -52,8 +52,8 @@ function ArithGeo(arr) {
     var geoFlag = true;
 
     for (var i = 0; i < arr.length - 1; i++) {
-        arrDif.push(arr[i + 1] - arr[i]);
-        arrQuo.push(arr[i + 1] / arr[i]);
+      arrDif.push(arr[i + 1] - arr[i]);
+      arrQuo.push(arr[i + 1] / arr[i]);
       if (i > 0) {
         if (arrDif[i-1] != arrDif[i]) {
           ariFlag = false;
