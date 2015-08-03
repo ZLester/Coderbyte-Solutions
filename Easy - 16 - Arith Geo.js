@@ -54,15 +54,14 @@ function ArithGeo(arr) {
     for (var i = 0; i < arr.length - 1; i++) {
         arrDif.push(arr[i + 1] - arr[i]);
         arrQuo.push(arr[i + 1] / arr[i]);
-    }
-
-    for (var j = 0; j < arrDif.length - 1; j++) {
-        if (arrDif[j] != arrDif[j + 1]) {
-            ariFlag = false;
+      if (i > 0) {
+        if (arrDif[i-1] != arrDif[i]) {
+          ariFlag = false;
         }
-        if (arrQuo[j] != arrQuo[j + 1]) {
-            geoFlag = false;
+        if (arrQuo[i-1] != arrQuo[i]) {
+          geoFlag = false;
         }
+      }
     }
 
     if (ariFlag) {
