@@ -20,7 +20,7 @@ function ArrayAdditionI(arr) {
    		result = true;
         return;
     }
-    // If the current sum isn't equal to the largest value, we iterate over the numbers array...
+    // If the current sum isn't equal to the largest value, we iterate over the numbers array... (this loop structure may look a little funky, but since we're getting i from somewhere else we don't need a loop initialization)
     for (; i < arr.length; i++) {
         // Add the current number to our sum...
     	sum += arr[i];
