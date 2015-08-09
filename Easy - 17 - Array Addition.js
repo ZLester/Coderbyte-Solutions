@@ -17,8 +17,8 @@ function ArrayAdditionI(arr) {
   	i = i || 0;
   	// Our sole base case is to check if our current sum is equal to the largest value
     if (sum === largest) {
-        // If it is, we set our result to true and return out of the inner function
-   		result = true;
+      // If it is, we set our result to true and return out of the inner function
+      result = true;
       return;
     }
     // This next loop's structure may look a little funky to some people, but since we're getting i from somewhere else we don't need a loop initialization
