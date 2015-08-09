@@ -51,7 +51,7 @@ function ArrayAdditionI(arr) {
   	i = i || 0;
   	
     if (sum === largest) {
-   		result = true;
+      result = true;
       return;
     }
     for (; i < arr.length; i++) {
