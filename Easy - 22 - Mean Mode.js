@@ -1,8 +1,7 @@
 // Step By Step
 function MeanMode(arr) {
     
-    // First, we declare:
-    // an empty array to hold the number of times each item in the input array occurs,
+    // First, we declare an empty array to hold the number of times each item in the input array occurs,
     var modeArr = [];
     // a variable to hold the actual mode,
     var mode = 0;
