@@ -1,6 +1,6 @@
 function OffLineMinimum(strArr) {
 
-    var numTest = /[1234567890]/;
+    var numTest = /[0-9]/;
     var numArr = [];
     var answerArr = [];
     var lowest = 10;
