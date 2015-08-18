@@ -6,10 +6,10 @@ function FirstReverse(str) {
     str = str.split("");
 
     // Next, we use the reverse method to reverse the order of the elements in our newly formed array.
-    // Note that .reverse only works on arrays (which is why we had to use .split).
+    // Note that only arrays have the .reverse method, which is why we had to use .split.
     str = str.reverse();
 
-    // After that, we use the .join method to patch our array back together into a string. 
+    // After that, we use the .join method to reassemble our array back into a string. 
     // Passing an empty string here means that nothing gets inserted between each array element.
     str = str.join("");
 
