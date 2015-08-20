@@ -1,9 +1,9 @@
 // Step By Step
 function LongestWord(sen) {
 
-    // First, we declare a variable to hold the longest word (var longestWord = "") and initialize it with an empty string...
+    // First, we declare a variable to hold the longest word and initialize it to an empty string...
     var longestWord = "";
-    // ...and another variable to hold the length of the longest word, initializing it to 0.
+    // ...along with another variable to hold the length of the longest word, initializing it to 0.
     var longestLength = 0;
 
     // Next, we "prep" the input sentence by removing all non-alphanumeric characters
@@ -16,20 +16,20 @@ function LongestWord(sen) {
     // Note that we pass a single space into the method (" ") to split the string at each space
     sen = sen.split(" ");
 
-    // Next, we declare a for loop that iterates through each item in our new array
-    // Our if statement checks if the length of the current item is longer than our "longestLength" variable we declared earlier and sets the longestWord variable to the actual word. 
+    // After that, we declare a for loop that iterates through each item in our new array...
     for (var i = 0; i < sen.length; i++) {
+        // ...and check if the length of the word we're currently looking at is longer than the longestLength variable
         if (sen[i].length > longestLength) {
+            // If it is, we set the longestLength variable to the length of the newly-longest word...
             longestLength = sen[i].length;
+            // ...and set the longestWord variable to the string itself
             longestWord = sen[i];
         }
     }
     // Note that since we initialized the longestLength variable to 0, the first word in our array will always become the longest word
     // As per coderbyte's prompt, all ties go to the earliest occuring word, which is why we use > in our if statement and not >=
-    // Note that I used "i < sen.length" for the sake of clarity, though best practices would dictate that we declare the length variable at the same time as i to make this loop more efficient.
-    // As you can see below, the preferred way to do this would be "for (var i = 0, x = sen.length; i < x; i++)"
     
-    // Finally, we return the variable where we stored the answer
+    // Finally, we our answer
     return longestWord;
 }
 
@@ -39,7 +39,7 @@ function LongestWord(sen) {
     var longestLength = 0;
     sen = sen.replace(/[^a-zA-Z0-9\s]/g, "").split(" ");
 
-    for (var i = 0, x = sen.length; i < x; i++) {
+    for (var i = 0; i < sen.length; i++) {
         if (sen[i].length > longestLength) {
             longestLength = sen[i].length;
             longestWord = sen[i];
