@@ -33,7 +33,7 @@ function LongestWord(sen) {
     return longestWord;
 }
 
-// Best Practices
+// Without comments
 function LongestWord(sen) {
     var longestWord = "";
     var longestLength = 0;
