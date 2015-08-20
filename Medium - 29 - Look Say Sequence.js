@@ -1,6 +1,6 @@
 // Step-by-step
 function LookSaySequence(num) { 
-  // First up, we create a result variable to hold the string we're going to return
+  // First, we create a result variable to hold the string we're going to return
   var result = "";
   // Appending an empty string to our input number type coerces it into a string
   // This allows us to add numbers to it without JavaScript thinking we want to perform arithmetic 
