@@ -1,5 +1,4 @@
 function SwapII(str) { 
-
   var testChar = /[a-zA-Z]/;
   var testSwap = /[0-9][a-zA-Z]+[0-9]/g;
   var answer = "";
