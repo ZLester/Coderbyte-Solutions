@@ -5,8 +5,7 @@ function NumberAddition(str) {
     str = str.split(/[a-zA-Z]/);
     // Next, we declare a sum variable to hold our answer.
     var sum = 0;
-
-    // After that, we loop through each element in our modified array...
+    // After that, we iterate over each element in our modified array...
     for (var i = 0; i < str.length; i++) {
         // ...and if it isn't an empty string...
         if (str[i] != "") {
@@ -14,22 +13,20 @@ function NumberAddition(str) {
             sum += parseInt(str[i]);
         }
     }
-
     // Finally, we return our answer
     return sum;
 }
 
 // Best Practices
 function NumberAddition(str) {
-
     str = str.split(/[a-zA-Z]/);
     var sum = 0;
-
-    for (var i = 0, x = str.length; i < x; i++) {
+    
+    for (var i = 0; i < str.length; i++) {
         if (str[i] != "") {
             sum += parseInt(str[i]);
         }
     }
-
+    
     return sum;
 }
