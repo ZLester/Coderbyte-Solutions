@@ -20,7 +20,5 @@ function PrimeMover(mynum) {
         }
         cur++;
     }
-
     return primeArr.pop();
-
 }
