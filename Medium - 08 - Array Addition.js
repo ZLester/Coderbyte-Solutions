@@ -6,7 +6,7 @@ function ArrayAddition(arr) {
   for (var i = 0; i < arr.length; i++) {
     sum += arr[i];
     if (sum===largest) {
-    return true;
+      return true;
     }
     
     for (var j = 0; j < arr.length; j++) {
@@ -17,6 +17,7 @@ function ArrayAddition(arr) {
       return true;
       }
     }
+    
     for (var k = 0; k < arr.length; k++) {
       if (k !== i) {
         sum -= arr[k];
@@ -25,7 +26,9 @@ function ArrayAddition(arr) {
         return true;
       }
     }
+    
     sum = 0;
   }
+  
   return false;      
 }
