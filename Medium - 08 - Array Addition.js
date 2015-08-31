@@ -3,30 +3,29 @@ function ArrayAddition(arr) {
   var largest = arr.sort(function(a,b){return a-b}).pop();
   var sum = 0;
   
-  for (i=0;i<arr.length;i++) {
+  for (var i = 0; i < arr.length; i++) {
     sum += arr[i];
     if (sum===largest) {
     return true;
     }
     
-    for (j=0;j<arr.length;j++) {
+    for (var j = 0; j < arr.length; j++) {
       if (j!==i) {
-      sum += arr[j];
+        sum += arr[j];
       }
       if (sum===largest) {
-    return true;
+      return true;
+      }
     }
-    }
-    for (k=0;k<arr.length;k++) {
-      if (k!==i) {
-      sum -= arr[k];
+    for (var k = 0; k < arr.length; k++) {
+      if (k !== i) {
+        sum -= arr[k];
       }
       if (sum===largest) {
-    return true;
-    }
+        return true;
+      }
     }
     sum = 0;
   }
-  
- return false;      
+  return false;      
 }
