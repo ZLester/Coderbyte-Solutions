@@ -2,14 +2,13 @@
 function SimpleAdding(num) {
     // Declare a variable to hold our answer
     var sum = 0;
-    
+
     // Loop through all numbers between num and 1 inclusive...
     for (var i = num; i > 0; i--) {
         // ...adding i to our answer each time.
         sum += i;
     }
-    
-    // Return our answer.
+    // Finally, we return our answer.
     return sum;
 }
 
