@@ -17,7 +17,7 @@ function NumberAddition(str) {
     return sum;
 }
 
-// Best Practices
+// Without Comments
 function NumberAddition(str) {
     str = str.split(/[a-zA-Z]/);
     var sum = 0;
