@@ -1,6 +1,6 @@
 // Step By Step
 function FirstFactorial(num) {
-    // First we declare a for loop starting at the parameter number - 1 (var i = num - 1)
+    // First, we declare a for loop starting at the parameter number - 1 (var i = num - 1)
     // We decrease i by 1 each iteration (i--) and stop when i reaches 2 (i > 1) 
     for (var i = num - 1; i > 1; i--) {
         // On each pass, we multiply the num by i
@@ -13,7 +13,7 @@ function FirstFactorial(num) {
     return num;
 }
 
-// Best Practices
+// Without Comments
 function FirstFactorial(num) {
     for (var i = num - 1; i > 1; i--) {
         num *= i;
