@@ -14,8 +14,7 @@ function AlphabetSoup(str) {
   return str;
 }
 
-// Best Practices
+// With Chaining
 function AlphabetSoup(str) { 
-  
   return str.split("").sort().join("");
 }
