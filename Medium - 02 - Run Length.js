@@ -1,16 +1,15 @@
 function RunLength(str) {
 
-    str = str.split("");
     var count = 1;
-    var answer = "";
+    var result = "";
 
     for (var i = 0; i < str.length; i++) {
         if (str[i] === str[i + 1]) {
             count++;
         } else {
-            answer += count.toString() + str[i].toString();
+            result += count + str[i];
             count = 1;
         }
     }
-    return answer;
+    return result;
 }
