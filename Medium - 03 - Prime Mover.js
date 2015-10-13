@@ -1,21 +1,20 @@
 
-function PrimeMover(mynum) {
+function PrimeMover(num) {
 
-    function test(num) {
-        var isPrime = true;
+    var isPrime = function(num) {
         for (var i = 2; i < num; i++) {
-            if (num % i === 0) {
-                isPrime = false;
+            if (num % i === 0 && i !== num) {
+                return false;
             }
         }
-        return isPrime;
-    }
+        return true;
+    };
 
-    var primeArr = [2];
-    var cur = 3;
+    var primeArr = [];
+    var cur = 2;
     
-    while (primeArr.length < mynum) {
-        if (test(cur)) {
+    while (primeArr.length < num) {
+        if (isPrime(cur)) {
             primeArr.push(cur);
         }
         cur++;
