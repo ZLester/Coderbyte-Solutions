@@ -32,7 +32,7 @@ function LetterChanges(str) {
     return answer;
 }
 
-// Best Practices
+// Without Comments
 function LetterChanges(str) {
 
     var alpha = "abcdefghijklmnopqrstuvwxyz";
