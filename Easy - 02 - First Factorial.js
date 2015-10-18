@@ -13,6 +13,14 @@ function FirstFactorial(num) {
     return num;
 }
 
+// Recursive Solution
+function FirstFactorial(num) {
+    if (num === 1) {
+        return num;
+    }
+    return num * FirstFactorial(num - 1);
+}
+
 // Without Comments
 function FirstFactorial(num) {
     for (var i = num - 1; i > 1; i--) {
