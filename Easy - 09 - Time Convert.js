@@ -13,7 +13,7 @@ function TimeConvert(num) {
     return hours + ":" + minutes;
 }
 
-// Best practices
+// Without comments
 function TimeConvert(num) {
 
     return Math.floor(num / 60) + ":" + num % 60;
