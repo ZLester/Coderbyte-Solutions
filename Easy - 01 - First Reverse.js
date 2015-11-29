@@ -21,3 +21,35 @@ function FirstReverse(str) {
 function FirstReverse(str) {
     return str.split("").reverse().join("");
 }
+
+// Without using native array methods
+function FirstReverse(str) {
+    // First, we declare a variable to hold our result and initialize it to an empty string.
+    var result = "";
+    // Next, we iterate over the input string in reverse, starting from the back (i = str.length - 1)...
+    for (var i = str.length - 1; i >= 0; i--) {
+        // ...and adding each character we hit to our result string.
+        result += str[i];
+    }
+    // Finally, we return our result
+    return result;
+}
+
+// Recursively
+function FirstReverse(str, result) {
+    // First, we use short-circuit evaluation to set up our result string.
+    // If result is undefined (or any false-y value), this line will set it equal to an empty string. 
+    // Otherwise, it will remain unchanged (result = result).
+    result = result || "";
+    // Next, we set up our only base case – when our input string has no letters left, we know it's time to return our result.
+    if (str.length === 0) {
+        return result;
+    }
+    // Each time we call the function, we add the last letter in the input string to our result...
+    result += str[str.length - 1];
+    // ...and remove the last letter from the input string with .slice. 
+    str = str.slice(0, -1);
+    // Note that the indexes passed to .slice are relative to the start of the string, so -1 is the index of the last letter
+    // Finally, we call the function again, this time passing our modified string and result variables.
+    return FirstReverse(str, result);
+}
