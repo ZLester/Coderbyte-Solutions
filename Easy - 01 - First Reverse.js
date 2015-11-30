@@ -1,4 +1,4 @@
-// Step By Step Using Native Array Methods
+// Using Native Array Methods
 function FirstReverse(str) {
     
     // First, we need to use .split to change the string into an array so it can be further manipulated.
