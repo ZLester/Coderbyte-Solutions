@@ -55,7 +55,8 @@ function FirstReverse(str, result) {
     result += str[str.length - 1];
     // ...and remove the last letter from the input string with .slice. 
     str = str.slice(0, -1);
-    // Note that the indexes passed to .slice are relative to the start of the string, so -1 is the index of the last letter, -2 is the index of the 2nd to last letter, etc.
+    // Note that the indexes passed to .slice are relative to the start of the string,
+    // so -1 is the index of the last letter, -2 is the index of the 2nd to last letter, etc.
     
     // Finally, we call the function again, this time passing our modified string and result variables.
     return FirstReverse(str, result);
