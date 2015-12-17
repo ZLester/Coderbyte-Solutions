@@ -8,7 +8,7 @@ function LongestWord(sen) {
 
     // Next, we "prep" the input sentence by removing all non-alphanumeric characters
     sen = sen.replace(/[^a-zA-Z0-9\s]/g, "");
-    // Note that /[^a-zA-Z0-9\s]/g is a regex expression that matches all characters that are not lowercase letter (a-z), an uppercase letter (A-Z), a number (0-9), and a space (\s)
+    // Note that /[^a-zA-Z0-9\s]/g is a regex expression that matches all characters that are not lowercase letter (a-z), an uppercase letter (A-Z), a number (0-9), or a space (\s)
     // The ^ character negates the set that follows it (think of it like ! in Javascript)
     // http://www.regexr.com/ is a good place to play around with regex expressions and see what each character does
 
