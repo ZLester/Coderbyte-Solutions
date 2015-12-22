@@ -11,7 +11,7 @@ function LetterChanges(str) {
     var answer = "";
     
     // After that, we loop through each character in our input string
-    for (i = 0; i < str.length; i++) {
+    for (var i = 0; i < str.length; i++) {
         // First, we use the indexOf method to check if the current character in our string is contained in alpha.
         // Note that if the string you pass into indexOf isn't found, it will return -1. Otherwise, it will return the index of the first matching character found.
         // For instance, alpha.indexOf("c") returns 2, while alpha.indexOf("C") returns -1. 
@@ -39,7 +39,7 @@ function LetterChanges(str) {
     var newAlpha = "bcdEfghIjklmnOpqrstUvwxyzA";
     var answer = "";
     
-    for (i = 0, i < str.length; i++) {
+    for (var i = 0, i < str.length; i++) {
         if (alpha.indexOf(str[i]) !== -1) {
             answer += newAlpha.charAt(alpha.indexOf(str[i]));
         } else {
