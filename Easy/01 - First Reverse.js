@@ -38,29 +38,5 @@ function FirstReverse(str) {
     return result;
 }
 
-// Recursively
-function FirstReverse(str, result) {
-    
-    // First, we use short-circuit evaluation to set up our result string.
-    // If result is undefined (or any false-y value), this line will set it equal to an empty string. 
-    // Otherwise, it will remain unchanged (result = result).
-    result = result || "";
-    
-    // Next, we set up our only base case – when our input string has no letters left, we know it's time to return our result.
-    if (str.length === 0) {
-        return result;
-    }
-    
-    // Each time we call the function, we add the last letter in the input string to our result...
-    result += str[str.length - 1];
-    // ...and remove the last letter from the input string with .slice. 
-    str = str.slice(0, -1);
-    // Note that the indexes passed to .slice are relative to the start of the string,
-    // so -1 is the index of the last letter, -2 is the index of the 2nd to last letter, etc.
-    
-    // Finally, we call the function again, this time passing our modified string and result variables.
-    return FirstReverse(str, result);
-}
-
 // Video Tutorial
 // https://www.youtube.com/watch?v=Kk_-SvZGdto
