@@ -27,5 +27,5 @@ function CheckNums(num1, num2) {
 
 // Using multiple ternary operators
 function CheckNums(num1, num2) {
-    return num1 < num2 ? true : num1 > num2 ? false : "-1"
+    return num1 < num2 ? true : num1 > num2 ? false : "-1";
 }
