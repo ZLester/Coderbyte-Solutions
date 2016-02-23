@@ -17,7 +17,7 @@ function LetterCapitalize(str) {
     return str;
 }
 
-// Best Practices
+// Without Comments
 function LetterCapitalize(str) {
 
     str = str.split(" ");
@@ -28,3 +28,11 @@ function LetterCapitalize(str) {
 
     return str.join(" ");
 }
+
+// Using Chaining/Map
+
+function LetterCapitalize(str) {
+    return str.split(" ").map(function(word, i) {
+        return word[0].toUpperCase() + word.substr(1); 
+    }).join(" ");
+} 
