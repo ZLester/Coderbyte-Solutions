@@ -20,7 +20,7 @@ function SimpleSymbols(str) {
     return true;
 }
    
-// Best Practices
+// Without Comments
 function SimpleSymbols(str) {
     
     for (var i = 0, x = str.length; i < x; i++) {
