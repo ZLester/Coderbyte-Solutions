@@ -1,8 +1,8 @@
 // Step By Step
 function MeanMode(arr) {
     
-    // First, we declare an empty array to hold the number of times each item in the input array occurs,
-    var modeMap = [];
+    // First, we declare an empty object to hold the number of times each item in the input array occurs,
+    var modeMap = {};
     // a variable to hold the actual mode,
     var mode = 0;
     // a variable to hold the number of times the mode occurs,
@@ -16,16 +16,16 @@ function MeanMode(arr) {
         // ...add each value to our sum variable
         sum += arr[i];
         
-        // ...check if each value is present in our frequency count array
+        // ...check if each value is present in our frequency count
         if (modeMap[arr[i]]) {
             // If it is, we increase its value by 1.
             modeMap[arr[i]]++;
         } else {
-            // If it isn't, we set its value to 1.
+            // If it isn't, we initialize its value to 1.
             modeMap[arr[i]] = 1;
         }
         
-        // ...and check if the count for the item's position in our mode array is greater than our current mode's count.
+        // ...and check if the count is greater than our current mode's count.
         if (modeMap[arr[i]] > modeCount) {
             // If it is, we set the mode to the current item in our input array...
             mode = arr[i];
@@ -49,7 +49,7 @@ function MeanMode(arr) {
 // Without Comments
 function MeanMode(arr) {
 
-    var modeMap = [];
+    var modeMap = {};
     var mode = 0;
     var modeCount = 0;
     var sum = 0;
