@@ -20,8 +20,8 @@ function LetterChanges(str) {
             // Note that this is an unnessary step that I do for the purposes of clarity. See the 2nd function for a faster implementation.
             var index = alpha.indexOf(str[i]);
             // Since we set up the characters in alpha to have the same index as the one we want to convert it to in newAlpha,
-            // all we have to do is use the charAt method to add the converted character to our answer variable.
-            answer += newAlpha.charAt(index);
+            // all we have to do is access newAlpha at index to add the converted character to our answer variable.
+            answer += newAlpha[index];
         // If str[i] doesn't appear in alpha...
         } else {
             // ...we add it to our answer string, leaving any characters we don't want to change untouched and in the same index in our answer variable as they were in our input string.
@@ -40,8 +40,9 @@ function LetterChanges(str) {
     var answer = "";
     
     for (var i = 0, i < str.length; i++) {
-        if (alpha.indexOf(str[i]) !== -1) {
-            answer += newAlpha.charAt(alpha.indexOf(str[i]));
+        var index = alpha.indexOf(str[i]);
+        if (index !== -1) {
+            answer += newAlpha[index];
         } else {
             answer += str[i];
         }
