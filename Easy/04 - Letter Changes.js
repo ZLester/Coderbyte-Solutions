@@ -39,7 +39,7 @@ function LetterChanges(str) {
     var newAlpha = "bcdEfghIjklmnOpqrstUvwxyzA";
     var answer = "";
     
-    for (var i = 0, i < str.length; i++) {
+    for (var i = 0; i < str.length; i++) {
         var index = alpha.indexOf(str[i]);
         if (index !== -1) {
             answer += newAlpha[index];
