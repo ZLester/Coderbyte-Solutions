@@ -5,4 +5,4 @@ After finishing all of Coderbyte's easy and medium challenges, I thought it migh
 
 #### Feel free to contribute your own solutions or improve upon the ones I've created!
 
-When contributing, please be sure to lint your solutions prior to submissions
+- When contributing, please be sure to lint your solutions prior to submission
