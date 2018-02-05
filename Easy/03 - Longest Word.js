@@ -49,7 +49,7 @@ function LongestWord(sen) {
 }
 
 
-// alternative solution of longest word problem (Using Array sort method)
+// Using Array sort() Method
 function LongestWord(sen) { 
     var words = sen.match(/[a-z0-9]+/gi);
     var sorted = words.sort(function(a,b){
