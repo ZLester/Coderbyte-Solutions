@@ -28,3 +28,15 @@ function FirstFactorial(num) {
     }
     return num;
 }
+
+// Using recursive function
+function FirstFactorial(num) { 
+    if(num === 0) {
+       return 1;
+    }
+    else if(num < 0 ) {
+      return undefined;
+    }
+    return num * FirstFactorial(num - 1);
+  }
+
