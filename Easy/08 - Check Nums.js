@@ -15,15 +15,10 @@ function CheckNums (num1, num2) {
   }
 }
 
-// Using a ternary operator
+// Without Comments
 function CheckNums (num1, num2) {
   if (num1 === num2) {
     return '-1';
   }
   return num1 < num2;
-}
-
-// Using multiple ternary operators
-function CheckNums (num1, num2) {
-  return num1 < num2 ? true : num1 > num2 ? false : '-1';
 }
