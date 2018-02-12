@@ -13,16 +13,18 @@ function FirstFactorial (num) {
   return num;
 }
 
-// Solution using recursive function
+// Recursive function
 function FirstFactorial(num) { 
-    if(num === 0) {
-       return 1;
-    }
-    else if(num < 0 ) {
-      return undefined;
-    }
-    return num * FirstFactorial(num - 1);
+  var result;
+  if(num === 0) {
+    result = 1;
   }
+  if(num < 0 ) {
+    result = undefined;
+  }
+  result =  num * FirstFactorial(num - 1);
+  return result;
+}
 
 
 // Without Comments
